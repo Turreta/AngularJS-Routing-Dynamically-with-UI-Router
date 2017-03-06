@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myapp">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamically move between states</title>
+        <meta name="description" content="Dynamically move between states">        
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+        <script src="js/myapp.js"></script>
+    </head>
+    <body>    
+        <h1>Watch the content below changes</h1>
+        <div data-ng-controller="navByButtonController">
+            <button data-ng-click="goHome()">HOME</button>
+            <button data-ng-click="goSecond()">SECOND PAGE</button>
+        </div>
+        <div style="border-style: dotted">
+            <ui-view></ui-view>
+        </div>        
+    </body>
+</html>
